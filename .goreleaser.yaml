@@ -38,6 +38,17 @@ archives:
       - goos: windows
         formats: [zip]
 
+signs:
+  - artfacts: checksum
+    args:
+      - "--batch"
+      - "--local-user"
+      - "{{ secrets.GPG_FINGERPRINT }}"
+      - "--output"
+      - "${signature}"
+      - "--detach-sign"
+      - "${artifact}"
+
 changelog:
   sort: asc
   filters:
