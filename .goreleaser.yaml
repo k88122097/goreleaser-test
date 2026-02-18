@@ -39,7 +39,7 @@ archives:
         formats: [zip]
 
 signs:
-  - artfacts: checksum
+  - artifacts: checksum
     args:
       - "--batch"
       - "--local-user"
