@@ -31,7 +31,6 @@ jobs:
         with:
           args: release --clean
         env:
-          GORELEASER_CURRENT_TAG: "v0.1.0-rc9"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GPG_FINGERPRINT: ${{ secrets.GPG_FINGERPRINT }}
 
